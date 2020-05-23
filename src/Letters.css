@@ -1,0 +1,19 @@
+.alphabet-selection {
+  display: flex;
+  flex-direction: column;
+}
+
+.consonant-rows {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  max-width: 700px;
+}
+
+.vowel-row {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+}

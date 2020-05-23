@@ -1,0 +1,21 @@
+.counter-frame {
+  box-shadow: var(--box-shadow-light);
+  border-radius: 50%;
+  margin-bottom: 5vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-content: center;
+}
+
+.counter-frame-inset {
+  margin: 20px;
+  border-radius: 50%;
+  box-shadow: var(--box-shadow-light-inverse);
+}
+
+.counter-frame-inset img {
+  padding: 10px;
+  height: 150px;
+  width: 150px;
+}
