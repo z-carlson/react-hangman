@@ -5,6 +5,12 @@ nav {
   display: flex;
   flex-direction: row;
   align-items: center;
+  padding-top: 1vh
+}
+
+nav h1 {
+  text-transform: uppercase;
+  font-size: 2rem;
 }
 
 nav div {
@@ -28,3 +34,63 @@ footer {
   color: rgb(255, 129, 107);
   font-weight: 700;
 }
+
+#settings-icon-light {
+  box-shadow: var(--box-shadow-light);
+  padding: .5rem;
+  border-radius: 50%;
+  text-transform: uppercase;
+  font-size: 2rem;
+  background: none;
+  border: none;
+}
+
+#settings-icon-dark {
+  box-shadow: var(--box-shadow-dark);
+  padding: .5rem;
+  border-radius: 50%;
+  text-transform: uppercase;
+  font-size: 2rem;
+  background: none;
+  border: none;
+}
+
+#settings-icon-light:hover {
+  box-shadow: var(--box-shadow-light-inverse);
+}
+
+#settings-icon-dark:hover {
+  box-shadow: var(--box-shadow-dark-inverse);
+}
+
+.light-mode {
+  margin: 0;
+  padding: 0;
+  font-family: var(--font-stack);
+  background-color: var(--bg-color-light);
+  color: var(--font-color-light);
+  width: 100%;
+}
+
+.dark-mode {
+    margin: 0;
+    padding: 0;
+    font-family: var(--font-stack);
+    background-color: var(--bg-color-dark);
+    color: var(--font-color-dark);
+    width: 100%;
+}
+
+footer button {
+  background: none;
+  border: solid 1px rgba(122, 122, 122, 0.5);
+  padding: 1.5rem;
+  font-family: var(--font-stack);
+  font-size: 1.2rem;
+  margin: 1rem 0;
+  border-radius: 5px;
+}
+
+footer button:hover {
+  border: solid 1px rgba(255, 255, 255, 1);
+} 

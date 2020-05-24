@@ -1,30 +1,26 @@
 import React, { Component } from 'react';
 import './Letter.css';
 
-const unselected = 'letter-box'
-const selected = 'letter-box-clicked'
 
 
 class Letter extends Component {
   constructor(props) {
     super(props);
-
       this.state = {
-        status: unselected,
-      }
+        buttonState: (this.props.theme === 'light' ? 'letter-box-light' : 'letter-box-dark'),
+      }      
   }
 
+  
   handleClick = () => {
-    this.props.handleGuess(this.props.letter.toLowerCase())
-    this.setState({status: selected})
-  }
+    this.props.handleGuess(this.props.letter.toLowerCase());
+    this.setState((this.props.theme === 'light' ? {buttonState: 'letter-box-clicked-light'} : {buttonState: 'letter-box-clicked-dark'} ));
+    }
 
 
-  render() {
+  render() {  
     return (
-      <div className={this.state.status} onClick={() => 
-            this.handleClick()
-          } >
+      <div className={this.state.buttonState} onClick={() => this.handleClick() } >
         <h3>{this.props.letter}</h3>
       </div>
     )
@@ -33,7 +29,6 @@ class Letter extends Component {
 }
 
 
-// const Letter = ({letter, handleGuess}) => {
 
 
 export default Letter

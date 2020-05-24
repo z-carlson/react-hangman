@@ -1,4 +1,4 @@
-.counter-frame {
+.counter-frame-light {
   box-shadow: var(--box-shadow-light);
   border-radius: 50%;
   margin-bottom: 5vh;
@@ -8,10 +8,26 @@
   align-content: center;
 }
 
-.counter-frame-inset {
+.counter-frame-dark {
+  box-shadow: var(--box-shadow-dark);
+  border-radius: 50%;
+  margin-bottom: 5vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-content: center;
+}
+
+.counter-frame-inset-light {
   margin: 20px;
   border-radius: 50%;
   box-shadow: var(--box-shadow-light-inverse);
+}
+
+.counter-frame-inset-dark {
+  margin: 20px;
+  border-radius: 50%;
+  box-shadow: var(--box-shadow-dark-inverse);
 }
 
 .counter-frame-inset img {

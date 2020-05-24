@@ -1,9 +1,10 @@
 import React from 'react';
 import './Settings.css';
 
-const Settings = () => {
+
+const Settings = ({toggleThemeChange, theme}) => {
   return (
-    <div className="settings-modal">
+    <div className={(theme === 'light' ? 'settings-modal-light' : 'settings-modal-dark')}>
       <form>
         <h1>Settings</h1>
         <div>
@@ -11,8 +12,8 @@ const Settings = () => {
           <div className="color-theme">
             <h4>Light mode</h4>
               <label className="theme-switch">
-                <input type="checkbox" />
-                <span className="slider round"></span>
+                <input type="checkbox" onClick={toggleThemeChange} checked={(theme === 'light' ? false : true)}/>
+                <span className="slider round" ></span>
               </label>
             <h4>Dark mode</h4>
           </div>

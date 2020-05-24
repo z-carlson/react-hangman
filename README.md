@@ -1,3 +1,28 @@
+TODO: 
+
+- Fill in word when out of guesses
+- Show definition (and congrats) if guess all the letters correctly
+- Enable 'next word'
+- More words and definitions
+- - Enable settings
+  - ~~themes~~
+  - difficulties
+  
+- implement a scoring mechanism. ideas:  
+  - count number right/wrong in session, maybe?
+  - streaks
+  - points per letter?
+
+~~Replace favicon~~
+
+
+
+
+
+
+
+
+
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
 ## Available Scripts
