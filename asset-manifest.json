@@ -1,0 +1,30 @@
+{
+  "files": {
+    "main.css": "/react-hangman/static/css/main.908ca4ea.chunk.css",
+    "main.js": "/react-hangman/static/js/main.dadd5535.chunk.js",
+    "main.js.map": "/react-hangman/static/js/main.dadd5535.chunk.js.map",
+    "runtime-main.js": "/react-hangman/static/js/runtime-main.e1105988.js",
+    "runtime-main.js.map": "/react-hangman/static/js/runtime-main.e1105988.js.map",
+    "static/js/2.68354abe.chunk.js": "/react-hangman/static/js/2.68354abe.chunk.js",
+    "static/js/2.68354abe.chunk.js.map": "/react-hangman/static/js/2.68354abe.chunk.js.map",
+    "index.html": "/react-hangman/index.html",
+    "precache-manifest.fc40ead8d9420bdbba117519f9161898.js": "/react-hangman/precache-manifest.fc40ead8d9420bdbba117519f9161898.js",
+    "service-worker.js": "/react-hangman/service-worker.js",
+    "static/css/main.908ca4ea.chunk.css.map": "/react-hangman/static/css/main.908ca4ea.chunk.css.map",
+    "static/js/2.68354abe.chunk.js.LICENSE.txt": "/react-hangman/static/js/2.68354abe.chunk.js.LICENSE.txt",
+    "static/media/circle0.svg": "/react-hangman/static/media/circle0.db1659e9.svg",
+    "static/media/circle1.svg": "/react-hangman/static/media/circle1.639bdc5c.svg",
+    "static/media/circle2.svg": "/react-hangman/static/media/circle2.2e57b6fb.svg",
+    "static/media/circle3.svg": "/react-hangman/static/media/circle3.9487d856.svg",
+    "static/media/circle4.svg": "/react-hangman/static/media/circle4.003e7d4b.svg",
+    "static/media/circle5.svg": "/react-hangman/static/media/circle5.afa8aec3.svg",
+    "static/media/circle6.svg": "/react-hangman/static/media/circle6.fc1f09fe.svg",
+    "static/media/settings.svg": "/react-hangman/static/media/settings.8ef73e70.svg"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.e1105988.js",
+    "static/js/2.68354abe.chunk.js",
+    "static/css/main.908ca4ea.chunk.css",
+    "static/js/main.dadd5535.chunk.js"
+  ]
+}
