@@ -3,28 +3,10 @@ import './App.css';
 import Counter from './Counter';
 import Word from './Word';
 import Letters from './Letters';
-import Definition from './Definition';
+import Definitions from './Definition';
 import Settings from './Settings';
 import secrets from './secrets.js';
-
-const wordList = [
-  {
-    word: 'cake',
-    definition: 'A rich, sweet dessert food, typically made of flour, sugar and eggs and baked in an oven, and often covered in icing.',
-    partOfSpeech: 'noun'
-  },
-  {
-    word: 'beautiful',
-    definition: 'Attractive and possessing beauty.',
-    partOfSpeech: 'Adjective'
-  },
-  {
-    word: 'candle',
-    definition: 'A light source consisting of a wick embedded in a solid, flammable substance such as wax, tallow, or paraffin.',
-    partOfSpeech: 'noun'
-  },
-]
-
+import { wordList } from './wordList.js';
 
 // const initialState = {
 //     view: "game",
@@ -42,10 +24,11 @@ class App extends Component {
       this.state = {
         view: "game",
         status: '',
-        word: 'duckboard',
+        word: '',
         guesses: [],
         wrongGuesses: 0,
-        theme: 'light'
+        theme: 'light',
+        definitions: {}
         };
   }
 
@@ -90,10 +73,6 @@ class App extends Component {
     }
   }
 
-  // showDefinition = () => {
-  //   this.setState({status: 'over'})
-  // }
-
   getWord = () => {
 
     let randomWord = wordList[Math.floor(Math.random() * wordList.length)];
@@ -102,35 +81,28 @@ class App extends Component {
     this.setState({
         view: "game",
         status: '',
-        word: randomWord.word,
+        word: randomWord,
         guesses: [],
         wrongGuesses: 0,
         });
 
-    // var myHeaders = new Headers();
-    //   myHeaders.append("app_id", '2bb3169f');
-    //   myHeaders.append("app_key", '0acde3d5d9d3e414fb57d32777748abd');
+    var myHeaders = new Headers();
+      myHeaders.append("Authorization", secrets.api_token);
 
-    // var requestOptions = {
-    //   method: 'GET',
-    //   headers: myHeaders,
-    //   mode: 'no-cors',
-    //   redirect: 'follow'
-    // };
+    var requestOptions = {
+      method: 'GET',
+      headers: myHeaders,
+    };
 
-    // fetch("https://od-api.oxforddictionaries.com/api/v2/entries/en-us/example", {
-    //   method: 'GET',
-    //   headers: {
-    //     "app_id": "2bb3169f",
-    //     "app_key": "0acde3d5d9d3e414fb57d32777748abd"
-    //   },
-    //   mode: 'no-cors',
-    // })
-    //   .then(response => response.text())
-    //   .then(result => console.log(result))
-    //   .catch(error => console.log('error', error));
-    // }
-  }
+    fetch(`https://owlbot.info/api/v4/dictionary/${randomWord}`, requestOptions)
+    .then(response => response.json())
+    .then(result => {
+      this.setState({definitions: result});
+    }).then(result => console.log(this.state.definitions.definitions[0].type))
+    .catch(error => console.log('error', error));
+
+    };
+
 
   render() {
     return (
@@ -153,16 +125,15 @@ class App extends Component {
                       word={this.state.word} 
                       status={this.state.status} 
                       guesses={this.state.guesses}
-                      // showDefinition={this.showDefinition} 
                       />
                     {this.state.status === 'over' 
-                     ? <Definition />
+                     ? <Definitions definitions={this.state.definitions}/>
                      : <p></p> 
                     }               
                     <Letters theme={this.state.theme} status={this.state.status} handleGuess={this.handleGuess} />
                   </main>
                   <footer>
-                    <button onClick={this.getWord} >New Word</button>
+                    <button onClick={this.getWord} id={(this.state.theme === 'light' ? "button-light" : "button-dark")}>New Word</button>
                   </footer>
                   </div>
                 : <div>

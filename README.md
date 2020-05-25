@@ -1,18 +1,16 @@
 TODO: 
 
-- Fill in word when out of guesses
-- Show definition (and congrats) if guess all the letters correctly
-- Enable 'next word'
-- More words and definitions
-- - Enable settings
-  - ~~themes~~
-  - difficulties
-  
-- implement a scoring mechanism. ideas:  
+- ~~add words and definitions~~
+- reset state after round over
+- show definition (and congrats) if guess all the letters correctly
+- enable difficulties
+- implement scoring mechanism
   - count number right/wrong in session, maybe?
   - streaks
-  - points per letter?
+  - points per letter
 
+- ~~Fill in word when out of guesses~~
+- ~~Enable 'next word'~~
 ~~Replace favicon~~
 
 
