@@ -18,25 +18,25 @@ const Settings = ({toggleThemeChange, theme}) => {
             <h4>Dark mode</h4>
           </div>
         </div>
-        <div className="difficulty-select">
+        {/* <div className="difficulty-select">
           <h3>Difficulty</h3>
           <div>
             <input type="radio" id="easy" name="difficulty" value="1" />
-            <label htmlFor="easy">I'm too young to die</label> 
+            <label htmlFor="easy">Easy</label> 
           </div>
           <div>
             <input type="radio" id="normal" name="difficulty" value="2" />
-            <label htmlFor="normal" checked >Hurt me plenty</label>
+            <label htmlFor="normal" checked >Normal</label>
           </div>
           <div>
             <input type="radio" id="hard" name="difficulty" value="3" />
-            <label htmlFor="hard">Ultra-violence</label>
+            <label htmlFor="hard">Hard</label>
           </div>
           <div>
             <input type="radio" id="very-hard" name="difficulty" value="4" />
-            <label htmlFor="very-hard">Nightmare</label>
+            <label htmlFor="very-hard">Very Hard</label>
           </div>
-        </div>
+        </div> */}
       </form>
     </div>
   )

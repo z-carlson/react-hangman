@@ -1,17 +1,23 @@
 TODO: 
 
-- ~~add words and definitions~~
-- reset state after round over
-- show definition (and congrats) if guess all the letters correctly
-- enable difficulties
 - implement scoring mechanism
   - count number right/wrong in session, maybe?
   - streaks
   - points per letter
 
+- enable difficulties
+
+
+- ~~Fix 'loading definition'~~
+  - ~~if definition takes too long, crashes after 'over'~~
+- ~~reset state after round over~~
+- ~~show definition (and congrats) if guess all the letters correctly~~
+
+
 - ~~Fill in word when out of guesses~~
 - ~~Enable 'next word'~~
 ~~Replace favicon~~
+- ~~add words and definitions~~
 
 
 
