@@ -1,21 +1,21 @@
 import React from 'react';
 import './Word.css';
 
-const Word = ({word, guesses, theme, status, }) => {
+const Word = ({word, guesses, theme, status, difficulty}) => {
   
   const letterList = word.split('');
 
-  // const done = (arr, target) => target.every(v => arr.includes(v));
+  const displayDifficulty = 'normal';
 
-
+  
   return (
     <div className={(theme === 'light' ? 'word-box-light' : 'word-box-dark')} >
-        <h1>{
+        <h1 className="display-word">{
             (status === 'over' ? word : letterList.map((letter, i) => {            
             if (guesses.includes(letter)) {
-              return letter
+            return <p className={difficulty}>{letter}</p>
             } else {
-              return '_';
+              return <p>_</p>;
             }
           }))
 
