@@ -13,3 +13,31 @@
   box-shadow: var(--box-shadow-dark);
   border-radius: 10px;
 }
+
+@keyframes fadeOut {
+  from {opacity: 1.0;}
+  to {opacity: 0.0;}
+}
+
+.display-word {
+  display: flex;
+  flex-direction: row;
+  align-content: flex-end;
+}
+
+.normal {
+  
+}
+
+.hard {
+  opacity: 0.0;
+  animation-duration: 15s;
+  animation-name: fadeOut;
+}
+
+.very-hard {
+  opacity: 0.0;
+  animation-duration: 2s;
+  animation-name: fadeOut;
+}
+

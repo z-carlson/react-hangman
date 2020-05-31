@@ -23,6 +23,7 @@ class App extends Component {
   constructor() {
     super();
       this.state = {
+        difficulty: 'normal',
         score: {
           won: 0,
           total: 0,
@@ -44,6 +45,8 @@ class App extends Component {
         },
         isPending: true
         };
+
+      this.handleDifficultyChange = this.handleDifficultyChange.bind(this);
   }
 
   checkGameOver = (wrongGuesses) => {
@@ -85,6 +88,10 @@ class App extends Component {
       });
     }
   }
+
+  handleDifficultyChange = (event) => {
+    this.setState({difficulty: event.target.value})
+  } 
 
   handleGuess = (letter) => {
     let currentGuesses = this.state.guesses;
@@ -188,7 +195,8 @@ class App extends Component {
                     </div>
                   </div>
                     <Counter theme={this.state.theme} count={this.state.wrongGuesses} />
-                    <Word 
+                    <Word
+                      difficulty={this.state.difficulty} 
                       theme={this.state.theme} 
                       word={this.state.word} 
                       status={this.state.status} 
@@ -213,7 +221,11 @@ class App extends Component {
                   </footer>
                   </div>
                 : <div>
-                    <Settings theme={this.state.theme} toggleThemeChange={this.toggleThemeChange} />
+                    <Settings 
+                      theme={this.state.theme} 
+                      toggleThemeChange={this.toggleThemeChange}
+                      handleDifficultyChange={this.handleDifficultyChange}
+                      difficulty={this.state.difficulty} />
                   </div>
             } 
         </div>

@@ -2,7 +2,8 @@ import React from 'react';
 import './Settings.css';
 
 
-const Settings = ({toggleThemeChange, theme}) => {
+const Settings = ({toggleThemeChange, theme, handleDifficultyChange, difficulty}) => {
+
   return (
     <div className={(theme === 'light' ? 'settings-modal-light' : 'settings-modal-dark')}>
       <form>
@@ -18,25 +19,43 @@ const Settings = ({toggleThemeChange, theme}) => {
             <h4>Dark mode</h4>
           </div>
         </div>
-        {/* <div className="difficulty-select">
+        <div className="difficulty-select">
           <h3>Difficulty</h3>
-          <div>
+          {/* <div>
             <input type="radio" id="easy" name="difficulty" value="1" />
             <label htmlFor="easy">Easy</label> 
+          </div> */}
+          <div>
+            <input 
+              type="radio" 
+              id="normal" 
+              name="difficulty" 
+              value="normal"
+              checked={difficulty === "normal"} 
+              onChange={handleDifficultyChange}/>
+            <label htmlFor="normal">Normal</label>
           </div>
           <div>
-            <input type="radio" id="normal" name="difficulty" value="2" />
-            <label htmlFor="normal" checked >Normal</label>
-          </div>
-          <div>
-            <input type="radio" id="hard" name="difficulty" value="3" />
+            <input 
+              type="radio" 
+              id="hard" 
+              name="difficulty" 
+              value="hard" 
+              onChange={handleDifficultyChange}
+              checked={difficulty === "hard"}/>
             <label htmlFor="hard">Hard</label>
           </div>
           <div>
-            <input type="radio" id="very-hard" name="difficulty" value="4" />
+            <input 
+              type="radio" 
+              id="very-hard" 
+              name="difficulty" 
+              value="very-hard" 
+              onChange={handleDifficultyChange}
+              checked={difficulty === "very-hard"}/>
             <label htmlFor="very-hard">Very Hard</label>
           </div>
-        </div> */}
+        </div>
       </form>
     </div>
   )
