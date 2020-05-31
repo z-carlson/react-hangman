@@ -14,7 +14,7 @@
 importScripts("https://storage.googleapis.com/workbox-cdn/releases/4.3.1/workbox-sw.js");
 
 importScripts(
-  "/react-hangman/precache-manifest.de0201cb1819fe24e5bb783256c2f324.js"
+  "/react-hangman/precache-manifest.410c7c451d251c168d9008dc87f24852.js"
 );
 
 self.addEventListener('message', (event) => {
