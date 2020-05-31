@@ -1,17 +1,17 @@
 {
   "files": {
-    "main.css": "/react-hangman/static/css/main.dbe80313.chunk.css",
-    "main.js": "/react-hangman/static/js/main.1353592e.chunk.js",
-    "main.js.map": "/react-hangman/static/js/main.1353592e.chunk.js.map",
+    "main.css": "/react-hangman/static/css/main.3c5354e9.chunk.css",
+    "main.js": "/react-hangman/static/js/main.26bd8b58.chunk.js",
+    "main.js.map": "/react-hangman/static/js/main.26bd8b58.chunk.js.map",
     "runtime-main.js": "/react-hangman/static/js/runtime-main.e1105988.js",
     "runtime-main.js.map": "/react-hangman/static/js/runtime-main.e1105988.js.map",
-    "static/js/2.53d140d8.chunk.js": "/react-hangman/static/js/2.53d140d8.chunk.js",
-    "static/js/2.53d140d8.chunk.js.map": "/react-hangman/static/js/2.53d140d8.chunk.js.map",
+    "static/js/2.d215b2cd.chunk.js": "/react-hangman/static/js/2.d215b2cd.chunk.js",
+    "static/js/2.d215b2cd.chunk.js.map": "/react-hangman/static/js/2.d215b2cd.chunk.js.map",
     "index.html": "/react-hangman/index.html",
-    "precache-manifest.820819cef1def39f5f6af07fb3ab774c.js": "/react-hangman/precache-manifest.820819cef1def39f5f6af07fb3ab774c.js",
+    "precache-manifest.1ce4be963264eb51d66d361f73a841e4.js": "/react-hangman/precache-manifest.1ce4be963264eb51d66d361f73a841e4.js",
     "service-worker.js": "/react-hangman/service-worker.js",
-    "static/css/main.dbe80313.chunk.css.map": "/react-hangman/static/css/main.dbe80313.chunk.css.map",
-    "static/js/2.53d140d8.chunk.js.LICENSE.txt": "/react-hangman/static/js/2.53d140d8.chunk.js.LICENSE.txt",
+    "static/css/main.3c5354e9.chunk.css.map": "/react-hangman/static/css/main.3c5354e9.chunk.css.map",
+    "static/js/2.d215b2cd.chunk.js.LICENSE.txt": "/react-hangman/static/js/2.d215b2cd.chunk.js.LICENSE.txt",
     "static/media/circle0.svg": "/react-hangman/static/media/circle0.db1659e9.svg",
     "static/media/circle1.svg": "/react-hangman/static/media/circle1.639bdc5c.svg",
     "static/media/circle2.svg": "/react-hangman/static/media/circle2.2e57b6fb.svg",
@@ -23,8 +23,8 @@
   },
   "entrypoints": [
     "static/js/runtime-main.e1105988.js",
-    "static/js/2.53d140d8.chunk.js",
-    "static/css/main.dbe80313.chunk.css",
-    "static/js/main.1353592e.chunk.js"
+    "static/js/2.d215b2cd.chunk.js",
+    "static/css/main.3c5354e9.chunk.css",
+    "static/js/main.26bd8b58.chunk.js"
   ]
 }
