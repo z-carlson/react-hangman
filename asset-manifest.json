@@ -1,14 +1,14 @@
 {
   "files": {
     "main.css": "/react-hangman/static/css/main.3c5354e9.chunk.css",
-    "main.js": "/react-hangman/static/js/main.26bd8b58.chunk.js",
-    "main.js.map": "/react-hangman/static/js/main.26bd8b58.chunk.js.map",
+    "main.js": "/react-hangman/static/js/main.8f525767.chunk.js",
+    "main.js.map": "/react-hangman/static/js/main.8f525767.chunk.js.map",
     "runtime-main.js": "/react-hangman/static/js/runtime-main.e1105988.js",
     "runtime-main.js.map": "/react-hangman/static/js/runtime-main.e1105988.js.map",
     "static/js/2.d215b2cd.chunk.js": "/react-hangman/static/js/2.d215b2cd.chunk.js",
     "static/js/2.d215b2cd.chunk.js.map": "/react-hangman/static/js/2.d215b2cd.chunk.js.map",
     "index.html": "/react-hangman/index.html",
-    "precache-manifest.1ce4be963264eb51d66d361f73a841e4.js": "/react-hangman/precache-manifest.1ce4be963264eb51d66d361f73a841e4.js",
+    "precache-manifest.d05420323eb48183ccffa35b376f40e7.js": "/react-hangman/precache-manifest.d05420323eb48183ccffa35b376f40e7.js",
     "service-worker.js": "/react-hangman/service-worker.js",
     "static/css/main.3c5354e9.chunk.css.map": "/react-hangman/static/css/main.3c5354e9.chunk.css.map",
     "static/js/2.d215b2cd.chunk.js.LICENSE.txt": "/react-hangman/static/js/2.d215b2cd.chunk.js.LICENSE.txt",
@@ -25,6 +25,6 @@
     "static/js/runtime-main.e1105988.js",
     "static/js/2.d215b2cd.chunk.js",
     "static/css/main.3c5354e9.chunk.css",
-    "static/js/main.26bd8b58.chunk.js"
+    "static/js/main.8f525767.chunk.js"
   ]
 }
