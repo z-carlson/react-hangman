@@ -1,5 +1,5 @@
 import React from 'react';
-import '/home/zac/Programming/hangman/src/Definition.css';
+import './Definition.css';
 import DefinitionBlock from "./DefinitionBlock";
 
 const Definitions = ({ definitions }) => {

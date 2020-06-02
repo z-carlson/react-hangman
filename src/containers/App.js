@@ -1,12 +1,12 @@
 import React, { Component } from 'react';
 import './App.css';
-import Counter from './Counter';
-import Word from './Word';
-import Letters from './Letters';
-import Definitions from './Definition';
-import Settings from './Settings';
-import secrets from './secrets.js';
-import { wordList } from './wordList.js';
+import Counter from '../components/Counter';
+import Word from '../Word';
+import Letters from '../components/Letters';
+import Definitions from '../components/Definition';
+import Settings from '../components/Settings';
+import secrets from '../secrets.js';
+import { wordList } from '../wordList.js';
 
 
 function DisplayResult({result}) {
@@ -174,7 +174,7 @@ class App extends Component {
             <h1>React Hangman</h1>
             <div onClick={this.toggleSettingsView}>
               <img id={(this.state.theme === 'light' ? 'settings-icon-light' : 'settings-icon-dark')} 
-                    src={require("./settings.svg")} 
+                    src={require("../settings.svg")} 
                     alt={"settings"} 
                     width={"40px;"}/> 
             </div>
