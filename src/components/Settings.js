@@ -21,10 +21,16 @@ const Settings = ({toggleThemeChange, theme, handleDifficultyChange, difficulty}
         </div>
         <div className="difficulty-select">
           <h3>Difficulty</h3>
-          {/* <div>
-            <input type="radio" id="easy" name="difficulty" value="1" />
+          <div>
+            <input 
+              type="radio" 
+              id="easy" 
+              name="difficulty" 
+              value="easy"
+              checked={difficulty === "easy"}
+              onChange={handleDifficultyChange} />
             <label htmlFor="easy">Easy</label> 
-          </div> */}
+          </div>
           <div>
             <input 
               type="radio" 

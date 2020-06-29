@@ -94,12 +94,20 @@ class App extends Component {
   } 
 
   handleGuess = (letter) => {
+    let incrementer = 0;
+    if (this.state.difficulty === "easy") {
+      incrementer = 0.5;
+    } else {
+      incrementer = 1;
+    }
+    
+
     let currentGuesses = this.state.guesses;
     currentGuesses.push(letter)
     
     const currentWrong = (this.state.word.includes(letter)) 
       ? this.state.wrongGuesses
-      : this.state.wrongGuesses + 1;
+      : this.state.wrongGuesses + incrementer;
                
     this.setState({guesses: currentGuesses});
 

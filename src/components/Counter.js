@@ -1,5 +1,6 @@
 import React from 'react';
 import './Counter.css';
+import GuessSVG from './guessSVG'
 
 
 const Counter = ({count, theme}) => {
@@ -10,7 +11,7 @@ const Counter = ({count, theme}) => {
   return (
     <div className={(theme === 'light' ? 'counter-frame-light' : 'counter-frame-dark')}>
       <div className={(theme === 'light' ? "counter-frame-inset-light" : "counter-frame-inset-dark")}>
-        <img src={require(`../circle${imageNum.toString()}.svg`)} alt={"5 guesses left"} className="counter-images"/>
+        <GuessSVG count={count} theme={theme}/>
       </div>
     </div>
   )
